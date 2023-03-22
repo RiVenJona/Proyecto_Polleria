@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h3>TABLA DE USUARIOS</h3>
+            <h3>Lista Login</h3>
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" EmptyDataText="No hay datos" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
                 <Columns>
                 <asp:BoundField DataField="IdUsuario" HeaderText="IdUsuario" />

@@ -12,7 +12,7 @@ namespace DA_
 {
     public class DA_Usuario
     {
-        public List<BE_Usuario> ListaUsuario()
+        public List<BE_Usuario> ListaUsuario(string user,string pass)
         {
             SqlDataReader rd = null;
             using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
@@ -20,9 +20,11 @@ namespace DA_
                 cn.Open();
                 SqlDataAdapter dt = new SqlDataAdapter();
                 SqlCommand sc;
-                sc = new SqlCommand("Select * FROM cuenta",cn);
+                sc = new SqlCommand("[dbo].[ValidacionLogin]",cn);
+                sc.Parameters.AddWithValue("@user", user);
+                sc.Parameters.AddWithValue("@pass", pass);
                 sc.CommandTimeout = 0;
-                sc.CommandType = CommandType.Text;
+                sc.CommandType = CommandType.StoredProcedure;
                 rd = sc.ExecuteReader();
                 BE_Usuario usuarios;
                 List<BE_Usuario> ListaUsers = new List<BE_Usuario>();             
@@ -30,13 +32,14 @@ namespace DA_
                 {
                     usuarios = new BE_Usuario();
                     usuarios.IdUsuario = int.Parse(rd["IdCuenta"].ToString());
-                    usuarios.User = rd["Usuario"].ToString();
-                    usuarios.Password = rd["Password"].ToString();
-                    usuarios.State = int.Parse(rd["Estado"].ToString());
                     ListaUsers.Add(usuarios);
                 }
                 return ListaUsers;
             }
+        }
+        public bool Entrar()
+        {
+            return true;
         }
     }
 }

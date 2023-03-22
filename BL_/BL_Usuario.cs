@@ -15,9 +15,13 @@ namespace BL_
         {
             dA_Usuario = new DA_Usuario();
         }
-        public List<BE_Usuario> BL_Lista()
+        public List<BE_Usuario> BL_Lista(string a,string b)
         {
-            return dA_Usuario.ListaUsuario();
+            return dA_Usuario.ListaUsuario(a,b);
+        }
+        public bool Entrar()
+        {
+            return dA_Usuario.Entrar();
         }
     }
 }

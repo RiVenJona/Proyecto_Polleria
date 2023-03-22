@@ -10,3 +10,9 @@ C:\Users\de_or\Desktop\Proyecto_Polleria\BE_\obj\Debug\BE_.csproj.AssemblyRefere
 C:\Users\de_or\Desktop\Proyecto_Polleria\BE_\obj\Debug\BE_.csproj.CoreCompileInputs.cache
 C:\Users\de_or\Desktop\Proyecto_Polleria\BE_\obj\Debug\BE_.dll
 C:\Users\de_or\Desktop\Proyecto_Polleria\BE_\obj\Debug\BE_.pdb
+C:\Users\María\Documents\ProyectoPolleria\Proyecto_Polleria\BE_\bin\Debug\BE_.dll
+C:\Users\María\Documents\ProyectoPolleria\Proyecto_Polleria\BE_\bin\Debug\BE_.pdb
+C:\Users\María\Documents\ProyectoPolleria\Proyecto_Polleria\BE_\obj\Debug\BE_.csproj.AssemblyReference.cache
+C:\Users\María\Documents\ProyectoPolleria\Proyecto_Polleria\BE_\obj\Debug\BE_.csproj.CoreCompileInputs.cache
+C:\Users\María\Documents\ProyectoPolleria\Proyecto_Polleria\BE_\obj\Debug\BE_.dll
+C:\Users\María\Documents\ProyectoPolleria\Proyecto_Polleria\BE_\obj\Debug\BE_.pdb

@@ -1,0 +1,6 @@
+C:\Users\PC\source\repos\Proyecto_Polleria\Util_\bin\Debug\Util_.dll
+C:\Users\PC\source\repos\Proyecto_Polleria\Util_\bin\Debug\Util_.pdb
+C:\Users\PC\source\repos\Proyecto_Polleria\Util_\obj\Debug\Util_.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Proyecto_Polleria\Util_\obj\Debug\Util_.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Proyecto_Polleria\Util_\obj\Debug\Util_.dll
+C:\Users\PC\source\repos\Proyecto_Polleria\Util_\obj\Debug\Util_.pdb

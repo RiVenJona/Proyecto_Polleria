@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "KKt3Xwqezb/dQbFgN7jhoyy8CwPMsS3CUfw+LqAQlPyq3HPf4q4VB6XCNJVvwmxvE3Q/4z5EREfFwpFTouJbFA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC\\source\\repos\\Proyecto_Polleria\\Util\\Util.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\system.security.cryptography.protecteddata.7.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

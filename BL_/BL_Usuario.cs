@@ -19,5 +19,9 @@ namespace BL_
         {
             return dA_Usuario.ListaUsuario(a,b);
         }
+        public string BL_Validacion(string user)
+        {
+            return dA_Usuario.GetCredencial(user);
+        }
     }
 }

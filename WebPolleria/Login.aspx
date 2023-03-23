@@ -18,7 +18,7 @@
             </div>
             <div>
             <h5>Contraseña</h5>
-            <asp:TextBox ID="TextBox1" runat="server" TextMode="Password" CssClass="passInput"></asp:TextBox>
+            <asp:TextBox ID="txtPass" runat="server" TextMode="Password" CssClass="passInput"></asp:TextBox>
             </div>
             <div>
             <asp:Button ID="btnLogin" runat="server" Text="Entrar" OnClick="btnLogin_Click" />

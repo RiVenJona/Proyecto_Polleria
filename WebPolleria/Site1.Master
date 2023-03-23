@@ -35,9 +35,6 @@
                 <DynamicSelectedStyle BackColor="#1C5E55" />
                 <Items>
                     <asp:MenuItem Text="Reservar Mesas" Value="Reservar_Mesas">
-                               <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Propietarios" Value="Propietarios"></asp:MenuItem>
-                               <asp:MenuItem NavigateUrl="~/MantVisitante.aspx" Text="Invitado" Value="Visitante"></asp:MenuItem>
-                               <asp:MenuItem NavigateUrl="~/MantEstacionamiento.aspx" Text="Estacionamiento" Value="Estacionamiento"></asp:MenuItem>
                            </asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/ProgVisitas.aspx" Text="Hacer Pedido" Value="Programacion Visita"></asp:MenuItem>
                     <asp:MenuItem Text="Reportes" Value="Reportes">

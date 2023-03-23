@@ -199,3 +199,5 @@ C:\Users\María\Documents\ProyectoPolleria\Proyecto_Polleria\WebPolleria\obj\Deb
 C:\Users\María\Documents\ProyectoPolleria\Proyecto_Polleria\WebPolleria\obj\Debug\WebPolleria.csproj.CopyComplete
 C:\Users\María\Documents\ProyectoPolleria\Proyecto_Polleria\WebPolleria\obj\Debug\WebPolleria.dll
 C:\Users\María\Documents\ProyectoPolleria\Proyecto_Polleria\WebPolleria\obj\Debug\WebPolleria.pdb
+C:\Users\de_or\Desktop\Proyecto_Polleria\WebPolleria\bin\BCrypt.Net.dll
+C:\Users\de_or\Desktop\Proyecto_Polleria\WebPolleria\bin\BCrypt.Net.xml

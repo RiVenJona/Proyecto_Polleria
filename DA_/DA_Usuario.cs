@@ -37,5 +37,27 @@ namespace DA_
                 return ListaUsers;
             }
         }
+        public string GetCredencial(string user)
+        {
+            try {
+                using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
+                {
+                    cn.Open();
+                    SqlDataAdapter dt = new SqlDataAdapter();
+                    SqlCommand cmd;
+                    cmd = new SqlCommand("[dbo].[SPValidacionUser]", cn);
+                    cmd.Parameters.AddWithValue("@user", user);
+                    cmd.CommandTimeout = 0;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    var val = cmd.ExecuteScalar();
+                    if (val == null) return "";
+                    else return val.ToString();
+
+                }
+            }
+            catch (Exception ) {
+                return "";
+            }
+        }
     }
 }

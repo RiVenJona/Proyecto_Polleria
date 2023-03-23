@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Text;
 
 namespace WebPolleria
 {
@@ -24,9 +25,17 @@ namespace WebPolleria
             CargarDatos(a);
             List<BE_OrdenReserva> Lista = new List<BE_OrdenReserva>();
             Lista = or.BL_Reserva(a);
-            foreach (var lis in Lista)
+            if (Lista != null)
             {
-                this.TxtEstado.Text = lis.EstadoOrden;
+                foreach (var lis in Lista)
+                {
+                    this.TxtEstado.Text = lis.EstadoOrden;
+                }
+                this.TxtNro.Enabled = false;
+            }
+            else
+            {
+                Message("Registro no encontrado");
             }
         }
         protected void CargarDatos(string a)
@@ -34,6 +43,40 @@ namespace WebPolleria
             or = new BL_OrdenReserva();
             this.GrdReserva.DataSource = or.BL_Reserva(a);
             this.GrdReserva.DataBind();
+        } 
+        public void Message(string str)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("<script type = 'text/javascript'>");
+            stringBuilder.Append("window.onload=function(){");
+            stringBuilder.Append("alert('");
+            stringBuilder.Append(str);
+            stringBuilder.Append("')};");
+            stringBuilder.Append("</script>");
+            this.ClientScript.RegisterClientScriptBlock(this.GetType(), "Alerta", stringBuilder.ToString());
+        }
+
+        protected void BtnAnular_Click(object sender, EventArgs e)
+        {
+            or = new BL_OrdenReserva();
+            string b = this.TxtNro.Text;
+            if (TxtNro.Text != String.Empty)
+            {
+                if (or.BL_AnulaReserva(b))
+                {
+                    Message("Se anulo correctamente");
+                    this.TxtNro.Enabled = true;
+                }
+                else
+                {
+                    Message("Error al anular");
+                }
+            }
+            else
+            {
+                Message("Ingrese Nro de Orden");
+            }
         }
     }
+    
 }

@@ -19,6 +19,10 @@ namespace BL_
         {
             return dA_Orden.ListaOrdenReserva(a);
         }
+        public bool BL_AnulaReserva(String b)
+        {
+            return dA_Orden.AnularReserva(b);
+        }
 
     }
 }

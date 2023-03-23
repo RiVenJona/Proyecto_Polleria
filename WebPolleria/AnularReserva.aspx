@@ -32,8 +32,9 @@
                 <SortedDescendingHeaderStyle BackColor="#3E3277" />
             </asp:GridView>
 
-            <asp:Button ID="Button3" runat="server" Text="Salir" />
-            <asp:Button ID="Button2" runat="server" Text="Anular" />
+            <asp:Button ID="Button3" runat="server" Text="Salir" /> 
+
+            <asp:Button ID="BtnAnular" runat="server" Text="Anular" OnClick="BtnAnular_Click" />
 
         </div>
 

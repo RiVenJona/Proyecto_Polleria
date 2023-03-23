@@ -19,9 +19,5 @@ namespace BL_
         {
             return dA_Usuario.ListaUsuario(a,b);
         }
-        public bool Entrar()
-        {
-            return dA_Usuario.Entrar();
-        }
     }
 }

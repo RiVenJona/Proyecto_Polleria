@@ -11,13 +11,15 @@ namespace WebPolleria
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.txtSesion.Text = Session["pass"].ToString();
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            
-            Response.Redirect("~/Index.aspx", true);
+            if (int.Parse(Session["Rol"].ToString())==1)
+            {
+                Response.Redirect("");
+            }
         }
     }
 }

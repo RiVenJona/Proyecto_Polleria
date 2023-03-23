@@ -37,9 +37,5 @@ namespace DA_
                 return ListaUsers;
             }
         }
-        public bool Entrar()
-        {
-            return true;
-        }
     }
 }

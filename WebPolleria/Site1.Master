@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebPolleria.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="/estilos/Login.css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 290px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+        <div class="navcontainer">
+            <table>
+                <tr>
+                    <td><asp:Image ID="Image1" runat="server" ImageUrl="~/Imagenes/Logo.jpg" Width="100px" CssClass="imgmargin"/></td>
+                    <td class="auto-style1">
+                        <div class="rol">
+                        <asp:Label ID="Label1" runat="server" Text="Rol Actual: " Enabled="False"></asp:Label>
+                        <asp:TextBox ID="txtRolActual" runat="server" Enabled="False"></asp:TextBox>
+                            </div>
+                    </td>
+                    <td><asp:Menu ID="Menu1" runat="server"  Orientation="Horizontal" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.9em" ForeColor="#666666" StaticSubMenuIndent="15px" >
+                <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="15px" VerticalPadding="5px" />
+                <DynamicMenuStyle BackColor="#E3EAEB" />
+                <DynamicSelectedStyle BackColor="#1C5E55" />
+                <Items>
+                    <asp:MenuItem Text="Reservar Mesas" Value="Reservar_Mesas">
+                               <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Propietarios" Value="Propietarios"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/MantVisitante.aspx" Text="Invitado" Value="Visitante"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/MantEstacionamiento.aspx" Text="Estacionamiento" Value="Estacionamiento"></asp:MenuItem>
+                           </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ProgVisitas.aspx" Text="Hacer Pedido" Value="Programacion Visita"></asp:MenuItem>
+                    <asp:MenuItem Text="Reportes" Value="Reportes">
+                               <asp:MenuItem NavigateUrl="~/WebForm1.aspx" Text="Reporte Reservas" Value="Reporte Reservas"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/ReportePropietarios.aspx" Text="Reporte Pedidos" Value="Reporte Pedidos"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/ReporteVisitante.aspx" Text="Reporte Trabajadores" Value="Reporte Trabajadores"></asp:MenuItem>
+                           </asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="15px" VerticalPadding="5px" />
+                <StaticSelectedStyle BackColor="#1C5E55" />
+            </asp:Menu></td>
+             </tr>
+            </table>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <p class="footerText">&copy; <%: DateTime.Now.Year %> Panchos - Polleria El Buen Sabor</p>
+        </footer>
+    </form>
+</body>
+</html>

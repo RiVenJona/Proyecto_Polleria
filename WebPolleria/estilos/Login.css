@@ -5,3 +5,13 @@
 .passInput{
     border-radius:50px;
 }
+.navcontainer {
+    background: #E3EAEB;
+}
+
+.rol{
+    width:350px;
+    display:flex;
+    margin-left:200px;
+    margin-right:150px
+}

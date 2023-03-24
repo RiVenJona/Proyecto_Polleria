@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DA_OrdenReserva.cs" />
+    <Compile Include="DA_RecepcionarCliente.cs" />
     <Compile Include="DA_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

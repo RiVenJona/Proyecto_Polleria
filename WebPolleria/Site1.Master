@@ -28,7 +28,7 @@
                         <asp:TextBox ID="txtRolActual" runat="server" Enabled="False"></asp:TextBox>
                             </div>
                     </td>
-                    <td><asp:Menu ID="Menu1" runat="server"  Orientation="Horizontal" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.9em" ForeColor="#666666" StaticSubMenuIndent="15px" >
+                    <td><asp:Menu ID="Menu1" runat="server"  Orientation="Horizontal" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.9em" ForeColor="#666666" StaticSubMenuIndent="15px" OnMenuItemClick="Menu1_MenuItemClick" >
                 <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
                 <DynamicMenuItemStyle HorizontalPadding="15px" VerticalPadding="5px" />
                 <DynamicMenuStyle BackColor="#E3EAEB" />
@@ -47,6 +47,8 @@
                 <StaticMenuItemStyle HorizontalPadding="15px" VerticalPadding="5px" />
                 <StaticSelectedStyle BackColor="#1C5E55" />
             </asp:Menu></td>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Cerrar Sesión" OnClick="Button1_Click" /></td>
              </tr>
             </table>
         </div>

@@ -56,7 +56,27 @@ namespace DA_
                 }
             }
             catch (Exception ) {
-                return "";
+                return String.Empty;
+            }
+        }
+        public string getRolByCre(string user, string pass)
+        {
+            try { 
+            using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
+            {
+                cn.Open();
+                SqlCommand cmd = new SqlCommand("[dbo].[SP_GetRolTrabajador]", cn);
+                cmd.Parameters.AddWithValue("@user",user);
+                cmd.Parameters.AddWithValue("@pass",pass);
+                cmd.CommandTimeout= 0;
+                cmd.CommandType= CommandType.StoredProcedure;
+                var val = cmd.ExecuteScalar();
+                return val.ToString();
+            }
+            }
+            catch (Exception)
+            {
+                return String.Empty;
             }
         }
     }

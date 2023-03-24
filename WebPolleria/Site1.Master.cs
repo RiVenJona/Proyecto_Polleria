@@ -11,7 +11,19 @@ namespace WebPolleria
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["RolUser"]!=null) { 
+            this.txtRolActual.Text = Session["RolUser"].ToString();
+            }
+        }
 
+        protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx", true);
         }
     }
 }

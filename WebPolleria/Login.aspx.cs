@@ -7,6 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using BCrypt.Net;
 using System.Text;
+using bc = BCrypt.Net.BCrypt;
 
 namespace WebPolleria
 {
@@ -27,13 +28,21 @@ namespace WebPolleria
         {
             us = new BL_Usuario();
             string usuario = this.txtUser.Text;
-            string password = BCrypt.Net.BCrypt.HashPassword(txtPass.Text,8);
-            Message(password.ToString());
-            if (BCrypt.Net.BCrypt.Verify(password,us.BL_Validacion(usuario)))
+            //string password = bc.HashPassword(txtPass.Text,12);
+            string password = bc.HashPassword(us.BL_Validacion(usuario),12);
+            var verificacion = bc.Verify(txtPass.Text,password);
+            if (verificacion)
             {
-                Message("Bienvenido, si esta creado");
+                Session["RolUser"] = us.GetRol(usuario, txtPass.Text);
+                Response.Redirect("AnularReserva.aspx", true);
             }
-            //Response.Redirect("WebForm2.aspx", true);
+            else
+            {
+                txtPass.Text = string.Empty;
+                txtUser.Text = string.Empty;
+                txtUser.Focus();
+                Message("Credenciales Incorrectas, intentelo de nuevo");
+            }
         }
         public void Message(string str)
         {

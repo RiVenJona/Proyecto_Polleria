@@ -23,5 +23,9 @@ namespace BL_
         {
             return dA_Usuario.GetCredencial(user);
         }
+        public string GetRol(string user, string pass)
+        {
+            return dA_Usuario.getRolByCre(user, pass);
+        }
     }
 }

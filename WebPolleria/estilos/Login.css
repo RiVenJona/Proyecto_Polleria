@@ -15,3 +15,17 @@
     margin-left:200px;
     margin-right:150px
 }
+.container{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+
+}
+.imgLogo {
+    border-radius: 15px;
+}
+btnenviar{
+    border-radius:15px;
+
+}

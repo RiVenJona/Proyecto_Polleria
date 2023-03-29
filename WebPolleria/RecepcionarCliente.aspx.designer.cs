@@ -24,13 +24,13 @@ namespace WebPolleria
         protected global::System.Web.UI.WebControls.Label Label11;
 
         /// <summary>
-        /// Control TxtIdRes.
+        /// Control TxtNro.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtIdRes;
+        protected global::System.Web.UI.WebControls.TextBox TxtNro;
 
         /// <summary>
         /// Control BtnBuscarRes.
@@ -123,13 +123,13 @@ namespace WebPolleria
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// Control TextTel.
+        /// Control TxtTel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextTel;
+        protected global::System.Web.UI.WebControls.TextBox TxtTel;
 
         /// <summary>
         /// Control Label4.
@@ -148,24 +148,6 @@ namespace WebPolleria
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtCorreoRes;
-
-        /// <summary>
-        /// Control Label5.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
-
-        /// <summary>
-        /// Control TxtNroRes.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNroRes;
 
         /// <summary>
         /// Control Label6.

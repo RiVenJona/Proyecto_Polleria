@@ -5,8 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div style="margin-top: 10px">
         <h3>RESERVAS:</h3>
-        <asp:Label ID="Label11" runat="server" Text="ID Reserva:" Width="130px"></asp:Label>
-        <asp:TextBox ID="TxtIdRes" runat="server" Width="152px"></asp:TextBox>
+        <asp:Label ID="Label11" runat="server" Text="N. O. Reserva:" Width="130px"></asp:Label>
+        <asp:TextBox ID="TxtNro" runat="server" Width="152px"></asp:TextBox>
         <asp:Button ID="BtnBuscarRes" runat="server" Text="Buscar Reserva" Style="margin-left: 48px" Width="110px" OnClick="BtnBuscarRes_Click"/>
     </div>
     <div style="margin-top: 10px">
@@ -26,24 +26,22 @@
         <asp:Label ID="Label2" runat="server" Text="Hora Reserva:" Width="130px"></asp:Label>
         <asp:TextBox ID="TxtHoraRes" runat="server" Width="152px" Style="margin-right: 48px"></asp:TextBox>
         <asp:Label ID="Label3" runat="server" Text="Telefono:" Width="130px"></asp:Label>
-        <asp:TextBox ID="TextTel" runat="server" Width="152px"></asp:TextBox>
+        <asp:TextBox ID="TxtTel" runat="server" Width="152px"></asp:TextBox>
     </div>
     <div style="margin-top: 10px">
         <asp:Label ID="Label4" runat="server" Text="Correo Reservante:" Width="130px"></asp:Label>
         <asp:TextBox ID="TxtCorreoRes" runat="server" Width="496px"></asp:TextBox>
     </div>
     <div style="margin-top: 10px">
-        <asp:Label ID="Label5" runat="server" Text="Nro. Reserva:" Width="130px"></asp:Label>
-        <asp:TextBox ID="TxtNroRes" runat="server" Width="152px" Style="margin-right: 48px"></asp:TextBox>
         <asp:Label ID="Label6" runat="server" Text="Mesa Asignada:" Width="130px"></asp:Label>
         <asp:TextBox ID="TxtMesa" runat="server" Width="152px"></asp:TextBox>
     </div>
 
     <div style="margin-top: 10px">
         <asp:Label ID="Label7" runat="server" Text="Mesa:" Width="130px"></asp:Label>
-        <asp:DropDownList ID="DropDownListMesas" runat="server" Width="160px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Height="25px">
+        <asp:DropDownList ID="DropDownListMesas" runat="server" Width="160px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Height="25px" AutoPostBack="True">
         </asp:DropDownList>
-    </div>
+        </div>
     <div style="margin-top: 10px">
         <asp:Label ID="Label8" runat="server" Text="Horario:" Width="130px"></asp:Label>
         <asp:DropDownList ID="DropDownListHorarios" runat="server" Width="160px" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" Height="25px">

@@ -82,6 +82,11 @@ namespace WebPolleria
         {
 
         }
+
+        protected void GrdReserva_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

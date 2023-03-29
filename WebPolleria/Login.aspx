@@ -17,7 +17,7 @@ background: #F7971E;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 ">
-            <h3 style="text-align:center; color:#fff">INICIO DE SESION - EL BUEN SABOR</h3>
+            <h3 style="text-align:center; color:#fff">|INICIO DE SESION - EL BUEN SABOR</h3>
             <asp:Image ID="Image1" runat="server" ImageUrl="~/Imagenes/Logo.jpg" Width="100px" CssClass="imgLogo"/>
             <div>
             <h5>Usuario</h5>

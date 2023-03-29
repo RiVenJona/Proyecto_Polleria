@@ -32,8 +32,12 @@ namespace DA_
                     ListaReserva = new BE_OrdenReserva();
                     ListaReserva.NumOrdenRe = rd["NumOrdenRe"].ToString();
                     ListaReserva.FechaProgra = rd["FechaProgra"].ToString();
+                    ListaReserva.DNI = int.Parse(rd["DNI"].ToString());
                     ListaReserva.Nombre = rd["Nombre"].ToString();
                     ListaReserva.Apellidos = rd["Apellidos"].ToString();
+                    ListaReserva.DescHorario = rd["DescHorario"].ToString();
+                    ListaReserva.Telefono = int.Parse(rd["Telefono"].ToString());
+                    ListaReserva.Correo = rd["correo"].ToString();
                     ListaReserva.IdMesa = int.Parse(rd["IdMesa"].ToString());
                     ListaReserva.Espacio = int.Parse(rd["Espacios"].ToString());
                     ListaReserva.EstadoOrden = rd["DescEstado"].ToString();

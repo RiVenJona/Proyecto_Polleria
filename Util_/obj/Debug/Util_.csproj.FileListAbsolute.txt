@@ -28,3 +28,9 @@ C:\Users\eduardo\Source\Repos\Proyecto_Polleria\Util_\obj\Debug\Util_.csproj.Ass
 C:\Users\eduardo\Source\Repos\Proyecto_Polleria\Util_\obj\Debug\Util_.csproj.CoreCompileInputs.cache
 C:\Users\eduardo\Source\Repos\Proyecto_Polleria\Util_\obj\Debug\Util_.dll
 C:\Users\eduardo\Source\Repos\Proyecto_Polleria\Util_\obj\Debug\Util_.pdb
+C:\Users\PC\Videos\Proyecto_Polleria\Util_\bin\Debug\Util_.dll
+C:\Users\PC\Videos\Proyecto_Polleria\Util_\bin\Debug\Util_.pdb
+C:\Users\PC\Videos\Proyecto_Polleria\Util_\obj\Debug\Util_.csproj.AssemblyReference.cache
+C:\Users\PC\Videos\Proyecto_Polleria\Util_\obj\Debug\Util_.csproj.CoreCompileInputs.cache
+C:\Users\PC\Videos\Proyecto_Polleria\Util_\obj\Debug\Util_.dll
+C:\Users\PC\Videos\Proyecto_Polleria\Util_\obj\Debug\Util_.pdb

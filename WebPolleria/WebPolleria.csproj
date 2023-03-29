@@ -75,6 +75,7 @@
     <Content Include="Imagenes\Logo.jpg" />
     <Content Include="MainMenu.aspx" />
     <Content Include="RecepcionarCliente.aspx" />
+    <Content Include="RegReserva.aspx" />
     <Content Include="ReOrdenReserva.aspx" />
     <Content Include="Web.config" />
     <Content Include="Login.aspx" />
@@ -108,6 +109,13 @@
     </Compile>
     <Compile Include="RecepcionarCliente.aspx.designer.cs">
       <DependentUpon>RecepcionarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegReserva.aspx.cs">
+      <DependentUpon>RegReserva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegReserva.aspx.designer.cs">
+      <DependentUpon>RegReserva.aspx</DependentUpon>
     </Compile>
     <Compile Include="ReOrdenReserva.aspx.cs">
       <DependentUpon>ReOrdenReserva.aspx</DependentUpon>

@@ -41,8 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL_Horario.cs" />
     <Compile Include="BL_OrdenReserva.cs" />
-    <Compile Include="BL_RecepcionarCliente.cs" />
+    <Compile Include="BL_Mesa.cs" />
     <Compile Include="BL_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

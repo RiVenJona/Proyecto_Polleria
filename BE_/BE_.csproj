@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BE_Horario.cs" />
+    <Compile Include="BE_Mesa.cs" />
     <Compile Include="BE_OrdenReserva.cs" />
     <Compile Include="BE_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

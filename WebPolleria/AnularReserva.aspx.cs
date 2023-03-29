@@ -77,6 +77,11 @@ namespace WebPolleria
                 Message("Ingrese Nro de Orden");
             }
         }
+
+        protected void TxtEstado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

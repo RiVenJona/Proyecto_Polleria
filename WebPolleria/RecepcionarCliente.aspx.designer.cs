@@ -15,13 +15,31 @@ namespace WebPolleria
     {
 
         /// <summary>
-        /// Control form1.
+        /// Control Label11.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label Label11;
+
+        /// <summary>
+        /// Control TxtIdRes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtIdRes;
+
+        /// <summary>
+        /// Control BtnBuscarRes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnBuscarRes;
 
         /// <summary>
         /// Control Label1.
@@ -33,6 +51,24 @@ namespace WebPolleria
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
+        /// Control TxtDNI.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtDNI;
+
+        /// <summary>
+        /// Control Label9.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label9;
+
+        /// <summary>
         /// Control TxtNombre.
         /// </summary>
         /// <remarks>
@@ -42,13 +78,22 @@ namespace WebPolleria
         protected global::System.Web.UI.WebControls.TextBox TxtNombre;
 
         /// <summary>
-        /// Control BtnBuscarRes.
+        /// Control Label10.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnBuscarRes;
+        protected global::System.Web.UI.WebControls.Label Label10;
+
+        /// <summary>
+        /// Control TxtApellido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtApellido;
 
         /// <summary>
         /// Control Label2.

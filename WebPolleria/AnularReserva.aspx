@@ -9,7 +9,7 @@
 
             <br />
             Estado O. Reserva&nbsp;
-            <asp:TextBox ID="TxtEstado" runat="server" Width="156px" BackColor="#999999" Enabled="False"></asp:TextBox>
+            <asp:TextBox ID="TxtEstado" runat="server" Width="156px" BackColor="#999999" Enabled="False" OnTextChanged="TxtEstado_TextChanged"></asp:TextBox>
 
             <asp:GridView ID="GrdReserva" runat="server" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Width="819px" AutoGenerateColumns="False" Height="190px" Style="margin-top: 36px" HorizontalAlign="Center">
                 <Columns>

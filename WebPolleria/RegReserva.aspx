@@ -16,28 +16,27 @@
          <br />
     <asp:DropDownList ID="DpDown1" runat="server" Height="16px" Width="140px" OnSelectedIndexChanged="DpDown1_SelectedIndexChanged" AutoPostBack="True" CausesValidation="True">
     </asp:DropDownList>
-        <asp:DropDownList ID="DpDown2" runat="server" Height="16px" style="margin-left: 32px" Width="129px" OnSelectedIndexChanged="DpDown2_SelectedIndexChanged">
+        <asp:DropDownList ID="DpDown2" runat="server" Height="16px" style="margin-left: 32px" Width="129px" OnSelectedIndexChanged="DpDown2_SelectedIndexChanged" AutoPostBack="True">
     </asp:DropDownList>
         <br />
+        <asp:Image ID="ImagenMesa" runat="server" Height="179px" Width="282px" style="margin-left: 14px" />
         <br />
-        <br />
-        <br />
-        <asp:Label ID="Label5" runat="server" Text="Nombre:"></asp:Label>
+        <asp:Label ID="Label5" runat="server" Text="Nombre:" Height="16px" Width="140px"></asp:Label>
         <asp:TextBox ID="TxtNombre" runat="server"></asp:TextBox>
         <br />
-        <asp:Label ID="Label6" runat="server" Text="Apellidos:"></asp:Label>
+        <asp:Label ID="Label6" runat="server" Text="Apellidos:" Height="16px" Width="140px"></asp:Label>
         <asp:TextBox ID="TxtApellidos" runat="server"></asp:TextBox>
         <br />
-        <asp:Label ID="Label7" runat="server" Text="Dni:"></asp:Label>
+        <asp:Label ID="Label7" runat="server" Text="Dni:" Height="16px" Width="140px"></asp:Label>
         <asp:TextBox ID="TxtDni" runat="server"></asp:TextBox>
         <br />
-        <asp:Label ID="Label8" runat="server" Text="Telefono:"></asp:Label>
+        <asp:Label ID="Label8" runat="server" Text="Telefono:" Height="16px" Width="140px"></asp:Label>
         <asp:TextBox ID="TxtTelefono" runat="server"></asp:TextBox>
         <br />
-        <asp:Label ID="Label9" runat="server" Text="Correo:"></asp:Label>
+        <asp:Label ID="Label9" runat="server" Text="Correo:" Height="16px" Width="140px"></asp:Label>
         <asp:TextBox ID="TxtCorreo" runat="server"></asp:TextBox>
         <br />
-        <asp:Label ID="Label10" runat="server" Text="Direccion:"></asp:Label>
+        <asp:Label ID="Label10" runat="server" Text="Direccion:" Height="16px" Width="140px"></asp:Label>
         <asp:TextBox ID="TxtDireccion" runat="server"></asp:TextBox>
         <asp:Button ID="RegCliente" runat="server" style="margin-left: 36px" Text="Registrar Cliente" Width="125px" OnClick="RegCliente_Click" />
         <br />

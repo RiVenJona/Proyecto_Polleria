@@ -105,6 +105,15 @@ namespace WebPolleria
         protected global::System.Web.UI.WebControls.DropDownList DpDown2;
 
         /// <summary>
+        /// Control ImagenMesa.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ImagenMesa;
+
+        /// <summary>
         /// Control Label5.
         /// </summary>
         /// <remarks>

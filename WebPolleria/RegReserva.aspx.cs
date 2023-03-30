@@ -18,6 +18,7 @@ namespace WebPolleria
             Deshabilitar();
             if (!Page.IsPostBack)
             {
+                this.ImagenMesa.ImageUrl = "~/Imagenes/ImagenInicial.jpg";
                 LlenarListaHorarios();
                 LlenarListaMesas();
                 this.RegCliente.Visible = false;
@@ -106,6 +107,15 @@ namespace WebPolleria
             DpDown2.Items.Insert(0, new System.Web.UI.WebControls.ListItem("[Seleccione una Mesa]", "0"));
 
         }
+        protected void SeleccionMesas(int m)
+        {
+            if (m == 0) this.ImagenMesa.ImageUrl = "~/Imagenes/ImagenInicial.jpg";
+            if (m == 1) this.ImagenMesa.ImageUrl = "~/Imagenes/Mesa1.jpg";
+            if (m == 2) this.ImagenMesa.ImageUrl = "~/Imagenes/Mesa2.jpg";
+            if (m == 3) this.ImagenMesa.ImageUrl = "~/Imagenes/Mesa3.jpg";
+            if (m == 4) this.ImagenMesa.ImageUrl = "~/Imagenes/Mesa4.jpg";
+            if (m == 5) this.ImagenMesa.ImageUrl = "~/Imagenes/Mesa5.jpg";
+        }
         protected void DpDown1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -113,7 +123,8 @@ namespace WebPolleria
 
         protected void DpDown2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            int mesa1 = int.Parse(this.DpDown2.SelectedValue);
+            SeleccionMesas(mesa1);
         }
 
         protected void RegCliente_Click(object sender, EventArgs e)
@@ -154,6 +165,8 @@ namespace WebPolleria
             int tra = 1;
             int dni = int.Parse(this.TxtBDni.Text);
             RE.BL_RegistrarReserva(mesa, fecha, hora, tra, dni);
+            Message("Se registro la reserva correctamente");
         }
+
     }
 }

@@ -72,8 +72,15 @@
   <ItemGroup>
     <Content Include="AnularReserva.aspx" />
     <Content Include="estilos\Login.css" />
+    <Content Include="estilos\RegisReserva.css" />
     <Content Include="GenOrdenInsumo.aspx" />
+    <Content Include="Imagenes\ImagenInicial.jpg" />
     <Content Include="Imagenes\Logo.jpg" />
+    <Content Include="Imagenes\Mesa1.jpg" />
+    <Content Include="Imagenes\Mesa2.jpg" />
+    <Content Include="Imagenes\Mesa3.jpg" />
+    <Content Include="Imagenes\Mesa4.jpg" />
+    <Content Include="Imagenes\Mesa5.jpg" />
     <Content Include="MainMenu.aspx" />
     <Content Include="RecepcionarCliente.aspx" />
     <Content Include="RegReserva.aspx" />

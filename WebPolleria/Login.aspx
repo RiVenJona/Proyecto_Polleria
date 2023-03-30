@@ -29,7 +29,7 @@ background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, F
             </div>
             <div style="margin-bottom:20px">
                 <br />
-            No recuerda su Password?<a href="Recuperar.aspx">Ingrese aquí</a>
+            No recuerda su Password?<a href="RecuperarCuenta.aspx">Ingrese aquí</a>
             <br />
             <asp:Button ID="btnLogin" runat="server" Text="Entrar" OnClick="btnLogin_Click" CssClass="btnenviar" />
                 <br />

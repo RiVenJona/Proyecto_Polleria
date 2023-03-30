@@ -46,6 +46,32 @@ namespace DA_
                 return Reserva;
             }
         }
+        public bool RegistrarReserva(int IdMesa, DateTime FechaProgra, int IdHorario, int IdTrabajador, int DNI)
+        {
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
+                {
+                    cn.Open();
+                    SqlDataAdapter dt = new SqlDataAdapter();
+                    SqlCommand sc;
+                    sc = new SqlCommand("[dbo].[AgregarReserva]", cn);
+                    sc.Parameters.AddWithValue("@Mesa", IdMesa);
+                    sc.Parameters.AddWithValue("@FechaProgra", FechaProgra);
+                    sc.Parameters.AddWithValue("@IdHorario", IdHorario);
+                    sc.Parameters.AddWithValue("@IdTrabajador", IdTrabajador);
+                    sc.Parameters.AddWithValue("@DNI", DNI);
+                    sc.CommandTimeout = 0;
+                    sc.CommandType = CommandType.StoredProcedure;
+                    var anul = sc.ExecuteScalar();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
         public bool AnularReserva(string NumOrdenRe)
         {
             try

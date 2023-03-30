@@ -79,19 +79,5 @@ namespace WebPolleria
             this.ClientScript.RegisterClientScriptBlock(this.GetType(), "Alerta", stringBuilder.ToString());
         }
 
-        protected void GvOrden_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void GvDatos_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            GridViewRow row = this.GvDatos.SelectedRow;
-
-
-            String desc = row.Cells[1].Text;
-            row.Cells[1];
-
-        }
     }
 }

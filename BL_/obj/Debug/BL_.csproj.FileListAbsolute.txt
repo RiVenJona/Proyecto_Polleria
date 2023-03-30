@@ -89,6 +89,7 @@ C:\Users\de_or\Desktop\kge de risa\Proyecto_Polleria\BL_\obj\Debug\BL_.csproj.Co
 C:\Users\de_or\Desktop\kge de risa\Proyecto_Polleria\BL_\obj\Debug\BL_.csproj.CopyComplete
 C:\Users\de_or\Desktop\kge de risa\Proyecto_Polleria\BL_\obj\Debug\BL_.dll
 C:\Users\de_or\Desktop\kge de risa\Proyecto_Polleria\BL_\obj\Debug\BL_.pdb
+<<<<<<< HEAD
 C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BL_\bin\Debug\BL_.dll
 C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BL_\bin\Debug\BL_.pdb
 C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BL_\bin\Debug\BE_.dll
@@ -102,3 +103,5 @@ C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BL_\obj
 C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BL_\obj\Debug\BL_.csproj.CopyComplete
 C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BL_\obj\Debug\BL_.dll
 C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BL_\obj\Debug\BL_.pdb
+=======
+>>>>>>> a6f38b87fdd082ccffd8e77f4de4d801e322d041

@@ -11,6 +11,7 @@ namespace WebPolleria
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //if (Session["RolUser"].ToString() != string.Empty)
             //{
             //    this.txtRol.Value = Session["RolUser"].ToString();
@@ -24,6 +25,21 @@ namespace WebPolleria
             //        aAnular.Style.Add("display", "none");
             //    }
             //}
+=======
+            if (Session["RolUser"].ToString() != string.Empty)
+            {
+                this.txtRol.Value = Session["RolUser"].ToString();
+                if (Session["RolUser"].ToString() == "Recepcionista")
+                {
+                    aGenOrden.Style.Add("display", "none");
+                }
+                if (Session["RolUser"].ToString() == "Jefe de Cocina")
+                {
+                    aRegistrar.Style.Add("display", "none");
+                    aAnular.Style.Add("display", "none");
+                }
+            }
+>>>>>>> a6f38b87fdd082ccffd8e77f4de4d801e322d041
 
         }
 

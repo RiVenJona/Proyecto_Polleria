@@ -18,9 +18,13 @@
         <br />
     </asp:Panel>
     <h4>DATOS INSUMO:</h4>  
+<<<<<<< HEAD
     <asp:Panel ID="Panel2" runat="server" Height="240px" style="border: 1px solid black;">
         <br />
         <asp:GridView HorizontalAlign="Center" ID="GvDatos" runat="server" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" Width="460px" OnSelectedIndexChanged="GvDatos_SelectedIndexChanged">
+=======
+        <asp:GridView HorizontalAlign="Center" ID="GvDatos" runat="server" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" Width="460px">
+>>>>>>> a6f38b87fdd082ccffd8e77f4de4d801e322d041
             <Columns>
 
                 <asp:BoundField  DataField="NumInsumo" HeaderText="ID" />
@@ -45,9 +49,13 @@
         <br />
     </asp:Panel>
     <h4>DETALLE ORDEN DE INSUMO:</h4>  
+<<<<<<< HEAD
     <asp:Panel ID="Panel3" runat="server" Height="240px" style="border: 1px solid black;">
         <br />
         <asp:GridView HorizontalAlign="Center" ID="GvOrden" runat="server" ShowHeaderWhenEmpty="true" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" AutoGenerateColumns="False" Width="460px" OnSelectedIndexChanged="GvOrden_SelectedIndexChanged">
+=======
+        <asp:GridView HorizontalAlign="Center" ID="GvOrden" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" AutoGenerateColumns="False" Width="460px">
+>>>>>>> a6f38b87fdd082ccffd8e77f4de4d801e322d041
             <Columns>
                 <asp:BoundField  DataField="NumInsumo" HeaderText="ID" />
                 <asp:BoundField  DataField="DesIns" HeaderText="DESCRIPCIÓN" />

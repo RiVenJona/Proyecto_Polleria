@@ -43,8 +43,12 @@ namespace WebPolleria
                     cookie["usuario"] = txtUser.Text;
                     Response.Cookies.Add(cookie);
                     Session["RolUser"] = us.GetRol(usuario, txtPass.Text);
+<<<<<<< HEAD
                     Response.Redirect("MainMenu.aspx",true);
                     //Response.Redirect("PreSeguridad.aspx",true);
+=======
+                    Response.Redirect("PreSeguridad.aspx",true);
+>>>>>>> a6f38b87fdd082ccffd8e77f4de4d801e322d041
                 }
             }
             else

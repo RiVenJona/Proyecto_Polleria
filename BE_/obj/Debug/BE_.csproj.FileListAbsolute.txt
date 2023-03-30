@@ -40,9 +40,12 @@ C:\Users\de_or\Desktop\kge de risa\Proyecto_Polleria\BE_\obj\Debug\BE_.csproj.As
 C:\Users\de_or\Desktop\kge de risa\Proyecto_Polleria\BE_\obj\Debug\BE_.csproj.CoreCompileInputs.cache
 C:\Users\de_or\Desktop\kge de risa\Proyecto_Polleria\BE_\obj\Debug\BE_.dll
 C:\Users\de_or\Desktop\kge de risa\Proyecto_Polleria\BE_\obj\Debug\BE_.pdb
+<<<<<<< HEAD
 C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BE_\bin\Debug\BE_.dll
 C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BE_\bin\Debug\BE_.pdb
 C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BE_\obj\Debug\BE_.csproj.AssemblyReference.cache
 C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BE_\obj\Debug\BE_.csproj.CoreCompileInputs.cache
 C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BE_\obj\Debug\BE_.dll
 C:\Users\eduardo\Downloads\Proyecto_Polleria-main\Proyecto_Polleria-main\BE_\obj\Debug\BE_.pdb
+=======
+>>>>>>> a6f38b87fdd082ccffd8e77f4de4d801e322d041

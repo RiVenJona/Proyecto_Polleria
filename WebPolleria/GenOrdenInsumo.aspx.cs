@@ -141,6 +141,7 @@ namespace WebPolleria
             this.ClientScript.RegisterClientScriptBlock(this.GetType(), "Alerta", stringBuilder.ToString());
         }
 
+<<<<<<< HEAD
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
             int index = int.Parse((sender as Button).CommandArgument);
@@ -183,5 +184,7 @@ namespace WebPolleria
             }
         }
 
+=======
+>>>>>>> a6f38b87fdd082ccffd8e77f4de4d801e322d041
     }
 }

@@ -28,7 +28,7 @@ namespace DA_
                     while (rd.Read())
                     {
                         mesas = new BE_Mesa();
-                        mesas.IdMesa = int.Parse(rd["IdMesa"].ToString());
+                        mesas.IdMesa = rd["IdMesa"].ToString();
                         ListaMesas.Add(mesas);
                     }
                 return ListaMesas;

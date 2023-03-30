@@ -8,6 +8,6 @@ namespace BE_
 {
     public class BE_Mesa
     {
-        public int IdMesa { get; set; }
+        public string IdMesa { get; set; }
     }
 }

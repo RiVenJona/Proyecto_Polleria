@@ -7,8 +7,8 @@
         <asp:Button ID="BtnDni" runat="server" Text="Buscar Cliente" OnClick="BtnDni_Click" />
         <br />
         <asp:Label ID="Label1" runat="server" Text="Fecha de reserva"></asp:Label>
-        <asp:TextBox ID="TxtFecha" runat="server" TextMode="Date" Height="16px"></asp:TextBox>
-        <asp:Button ID="BtnDispo" runat="server" Text="Buscar Disponibilidad" />
+        <asp:TextBox ID="TxtFecha" runat="server" TextMode="Date" Height="16px" Width="141px"></asp:TextBox>
+        <asp:Button ID="BtnDispo" runat="server" Text="Buscar Disponibilidad" OnClick="BtnDispo_Click" />
         <br />
         <br />
         <asp:Label ID="Label12" runat="server" Text="Horarios" Width="170px"></asp:Label>

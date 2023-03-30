@@ -43,8 +43,18 @@ namespace WebPolleria
             TxtDni.Enabled = false;
             TxtTelefono.Enabled = false;
         }
-        
-
+        protected void Limpiar()
+        {
+            TxtNombre.Text=string.Empty;
+            TxtApellidos.Text = string.Empty;
+            TxtCorreo.Text = string.Empty; 
+            TxtFecha.Text = string.Empty;
+            TxtDireccion.Text = string.Empty;
+            TxtDni.Text = string.Empty;
+            TxtTelefono.Text = string.Empty;
+            TxtBDni.Text = string.Empty;
+        }
+           
         protected void BtnDni_Click(object sender, EventArgs e)
         {
             PE = new BL_Persona();
@@ -154,19 +164,34 @@ namespace WebPolleria
             }
             this.RegCliente.Visible = false;
             this.BtnRegistrar.Visible = true;
+            TxtBDni.Text = TxtDni.Text;
+            TxtBDni.Enabled = false;
         }
 
         protected void BtnRegistrar_Click(object sender, EventArgs e)
         {
             BL_OrdenReserva RE = new BL_OrdenReserva();
-            int mesa = int.Parse(this.DpDown1.SelectedValue);
+            int mesa = int.Parse(this.DpDown2.SelectedValue);
             DateTime fecha = DateTime.Parse(this.TxtFecha.Text);
-            int hora = int.Parse(this.DpDown2.SelectedValue);
+            int hora = int.Parse(this.DpDown1.SelectedValue);
             int tra = 1;
             int dni = int.Parse(this.TxtBDni.Text);
-            RE.BL_RegistrarReserva(mesa, fecha, hora, tra, dni);
-            Message("Se registro la reserva correctamente");
+            if (RE.BL_RegistrarReserva(mesa, fecha, hora, tra, dni))
+            {
+                Message("Se registro la reserva correctamente");
+                DpDown1.Items.Clear();
+                DpDown2.Items.Clear();
+                Limpiar();
+            }
         }
 
+        protected void BtnDispo_Click(object sender, EventArgs e)
+        {
+            BL_OrdenReserva DI = new BL_OrdenReserva();
+            DateTime Fechad = DateTime.Parse(this.TxtFecha.Text);
+            int Horad = int.Parse(this.DpDown1.SelectedValue);
+            DpDown2.DataSource= DI.BL_Disponibilidad(Fechad, Horad);
+            DpDown2.DataBind();
+        }
     }
 }

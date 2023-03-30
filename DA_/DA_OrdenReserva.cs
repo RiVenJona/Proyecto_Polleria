@@ -72,6 +72,42 @@ namespace DA_
                 return false;
             }
         }
+        public List<BE_Mesa> Disponibilidad(DateTime FechaProgra,int IdHorario)
+        {
+            try
+            {
+                SqlDataReader rd = null;
+                using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
+                {
+                    cn.Open();
+                    SqlDataAdapter dt = new SqlDataAdapter();
+                    SqlCommand sc;
+                    sc = new SqlCommand("[dbo].[Disponibilidad]", cn);
+                    sc.Parameters.AddWithValue("@FechaProgra", FechaProgra);
+                    sc.Parameters.AddWithValue("@Horario", IdHorario);
+                    sc.CommandTimeout = 0;
+                    sc.CommandType = CommandType.StoredProcedure;
+                    rd = sc.ExecuteReader();
+                    BE_Mesa ListaReserva;
+                    List<BE_Mesa> Dispo = new List<BE_Mesa>();
+                    ListaReserva = new BE_Mesa();
+                    ListaReserva.IdMesa= "Seleccionar";
+                    Dispo.Add(ListaReserva);
+                    while (rd.Read())
+                    {
+                        ListaReserva = new BE_Mesa();
+                        ListaReserva.IdMesa = rd["IdMesa"].ToString();
+                        Dispo.Add(ListaReserva);
+                    }
+                    return Dispo;
+                }
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+
+        }
         public bool AnularReserva(string NumOrdenRe)
         {
             try

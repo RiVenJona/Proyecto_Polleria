@@ -66,6 +66,7 @@ namespace WebPolleria
                 {
                     Message("Se anulo correctamente");
                     this.TxtNro.Enabled = true;
+                    this.TxtEstado.Text = "Anulado";
                 }
                 else
                 {

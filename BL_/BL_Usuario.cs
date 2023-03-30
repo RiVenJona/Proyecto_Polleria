@@ -27,5 +27,13 @@ namespace BL_
         {
             return dA_Usuario.getRolByCre(user, pass);
         }
+        public bool ExisteUsuario(string user)
+        {
+            return dA_Usuario.ExisteUsuario(user);
+        }
+        public string ValidarUsuario(string p1, string p2, string p3, string p4, string p5)
+        {
+            return dA_Usuario.ValidaPreguntas(p1, p2, p3, p4, p5);
+        }
     }
 }

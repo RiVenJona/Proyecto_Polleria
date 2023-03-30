@@ -79,5 +79,58 @@ namespace DA_
                 return String.Empty;
             }
         }
+        public bool ExisteUsuario(string user)
+        {
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
+                {
+                    cn.Open();
+                    SqlCommand cmd = new SqlCommand("[dbo].[obtenerUsuario]", cn);
+                    cmd.Parameters.AddWithValue("@user", user);
+                    cmd.CommandTimeout = 0;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    var val = cmd.ExecuteScalar();
+                    if (int.Parse(val.ToString()) == 1)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        public string ValidaPreguntas(string p1, string p2, string p3, string p4, string p5)
+        {
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
+                {
+                    cn.Open();
+                    SqlCommand cmd = new SqlCommand("[dbo].[ValidarPreguntas]");
+                    cmd.Parameters.AddWithValue("@p1", p1);
+                    cmd.Parameters.AddWithValue("@p2", p2);
+                    cmd.Parameters.AddWithValue("@p3", p3);
+                    cmd.Parameters.AddWithValue("@p4", p4);
+                    cmd.Parameters.AddWithValue("@p5", p5);
+                    cmd.CommandTimeout = 0;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    var val = cmd.ExecuteScalar();
+                    if (val.ToString() != "")
+                    { return val.ToString(); }
+                    else { return string.Empty; }
+                }
+            }
+            catch (Exception)
+            {
+                return string.Empty;
+            }
+        }
     }
 }

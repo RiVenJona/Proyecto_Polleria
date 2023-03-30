@@ -51,6 +51,15 @@ namespace WebPolleria
         protected global::System.Web.UI.WebControls.Label Label7;
 
         /// <summary>
+        /// Control Panel1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel1;
+
+        /// <summary>
         /// Control Label3.
         /// </summary>
         /// <remarks>
@@ -78,6 +87,15 @@ namespace WebPolleria
         protected global::System.Web.UI.WebControls.Button btnBuscar;
 
         /// <summary>
+        /// Control Panel2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel2;
+
+        /// <summary>
         /// Control GvDatos.
         /// </summary>
         /// <remarks>
@@ -94,6 +112,15 @@ namespace WebPolleria
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAgregar;
+
+        /// <summary>
+        /// Control Panel3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel3;
 
         /// <summary>
         /// Control GvOrden.

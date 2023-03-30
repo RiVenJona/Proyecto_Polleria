@@ -19,6 +19,10 @@ namespace BL_
         {
             return dA_Persona.BuscaCliente(a);
         }
+        public bool BL_RegisPersona(string Nombre, string Apellidos, string Correo, int Telefono, string Direccion, int DNI)
+        {
+            return dA_Persona.RegistrarCliente(Nombre, Apellidos, Correo, Telefono, Direccion, DNI);
+        }
     }
     
 }

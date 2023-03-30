@@ -23,5 +23,9 @@ namespace BL_
         {
             return dA_Insumo.ListaInsumosxNombre(n);
         }
+        public string NumActualOrdenInsumo()
+        {
+            return dA_Insumo.NumActualOrdenInsumo();
+        }
     }
 }

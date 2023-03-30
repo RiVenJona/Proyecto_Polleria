@@ -16,7 +16,7 @@ namespace WebPolleria
         BL_Usuario us;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
         protected void CargarPag(string a, string b) 
         {
@@ -33,8 +33,19 @@ namespace WebPolleria
             var verificacion = bc.Verify(txtPass.Text,password);
             if (verificacion)
             {
-                Session["RolUser"] = us.GetRol(usuario, txtPass.Text);
-                Response.Redirect("AnularReserva.aspx", true);
+                if (us.ValUsuario(usuario,txtPass.Text)!=0) {
+                    Session["RolUser"] = us.GetRol(usuario, txtPass.Text);
+                    Response.Redirect("MainMenu.aspx", true);
+                }
+                else
+                {
+                    HttpCookie cookie = new HttpCookie("MisDatos");
+                    cookie["usuario"] = txtUser.Text;
+                    Response.Cookies.Add(cookie);
+                    Session["RolUser"] = us.GetRol(usuario, txtPass.Text);
+                    Response.Redirect("MainMenu.aspx",true);
+                    //Response.Redirect("PreSeguridad.aspx",true);
+                }
             }
             else
             {
@@ -55,5 +66,6 @@ namespace WebPolleria
             stringBuilder.Append("</script>");
             this.ClientScript.RegisterClientScriptBlock(this.GetType(), "Alerta", stringBuilder.ToString());
         }
+        
     }
 }

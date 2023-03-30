@@ -12,6 +12,26 @@ namespace DA_
 {
     public class DA_Insumo
     {
+        public string NumActualOrdenInsumo()
+        {
+            string valor = "";
+            SqlDataReader rd = null;
+            using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
+            {
+                cn.Open();
+                SqlCommand cmd = new SqlCommand("[dbo].[SP_IdOrdenInsumo]", cn);
+                cmd.CommandTimeout = 0;
+                cmd.CommandType = CommandType.StoredProcedure;
+                rd = cmd.ExecuteReader();
+                if (rd.Read())
+                {
+                    valor = rd["NumActual"].ToString();
+                }
+                rd.Close();
+            }
+
+            return valor;
+        }
         public List<BE_Insumo> ListaInsumos()
         {
             SqlDataReader rd = null;
@@ -67,6 +87,33 @@ namespace DA_
                 return ListaInsumosxNombre;
 
             }
+
+            //public bool RegistrarOrdenInsumo(int IdIns, int IdOrden, int Cantidad, int IdTra)
+            //{
+            //    try
+            //    {
+            //        using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
+            //        {
+            //            cn.Open();
+            //            SqlDataAdapter dt = new SqlDataAdapter();
+            //            SqlCommand sc;
+            //            sc = new SqlCommand("[dbo].[AgregarReserva]", cn);
+            //            sc.Parameters.AddWithValue("@Mesa", IdMesa);
+            //            sc.Parameters.AddWithValue("@FechaProgra", FechaProgra);
+            //            sc.Parameters.AddWithValue("@IdHorario", IdHorario);
+            //            sc.Parameters.AddWithValue("@IdTrabajador", IdTrabajador);
+            //            sc.Parameters.AddWithValue("@DNI", DNI);
+            //            sc.CommandTimeout = 0;
+            //            sc.CommandType = CommandType.StoredProcedure;
+            //            var anul = sc.ExecuteScalar();
+            //            return true;
+            //        }
+            //    }
+            //    catch (Exception)
+            //    {
+            //        return false;
+            //    }
+            //}
         }
     }
 }

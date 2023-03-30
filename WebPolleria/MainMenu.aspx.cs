@@ -11,15 +11,10 @@ namespace WebPolleria
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            if (int.Parse(Session["Rol"].ToString())==1)
-            {
-                Response.Redirect("");
-            }
+            rolBi.InnerHtml = Session["RolUser"].ToString().ToUpper();
+        //    if (Session["RolUser"] != null) { 
+        //    Response.Redirect("Login.aspx", true);
+        //} 
         }
     }
 }

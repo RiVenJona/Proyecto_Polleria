@@ -12,6 +12,34 @@ namespace DA_
 {
     public class DA_Persona
     {
+        public bool RegistrarCliente(string Nombre, string Apellidos, string Correo, int Telefono, string Direccion, int DNI)
+        {
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
+                {
+                    cn.Open();
+                    SqlDataAdapter dt = new SqlDataAdapter();
+                    SqlCommand sc;
+                    sc = new SqlCommand("[dbo].[RegistrarPersonaCliente]", cn);
+                    sc.Parameters.AddWithValue("@Nombre", Nombre);
+                    sc.Parameters.AddWithValue("@Apellidos", Apellidos);
+                    sc.Parameters.AddWithValue("@Correo", Correo);
+                    sc.Parameters.AddWithValue("@Telefono", Telefono);
+                    sc.Parameters.AddWithValue("@Direccion", Direccion);
+                    sc.Parameters.AddWithValue("@DNI", DNI);
+                    sc.CommandTimeout = 0;
+                    sc.CommandType = CommandType.StoredProcedure;
+                    var anul = sc.ExecuteScalar();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+        }
         public List<BE_Persona> BuscaCliente(int DNI)
         {
             SqlDataReader rd = null;

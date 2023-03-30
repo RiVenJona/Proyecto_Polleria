@@ -15,7 +15,7 @@
         <asp:Button style="margin-left: 50px" ID="btnBuscar" runat="server" Text="Buscar" Width="68px" OnClick="btnBuscar_Click"/>
         <br />
     <h4>DATOS INSUMO:</h4>  
-        <asp:GridView HorizontalAlign="Center" ID="GvDatos" runat="server" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" Width="460px" OnSelectedIndexChanged="GvDatos_SelectedIndexChanged">
+        <asp:GridView HorizontalAlign="Center" ID="GvDatos" runat="server" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" Width="460px">
             <Columns>
 
                 <asp:BoundField  DataField="NumInsumo" HeaderText="ID" />
@@ -47,7 +47,7 @@
         <br />
         <asp:Button style="float: right; margin-right: 50px" ID="btnAgregar" runat="server" Width="60px" Text="Agregar" />
     <h4>DETALLE ORDEN DE INSUMO:</h4>  
-        <asp:GridView HorizontalAlign="Center" ID="GvOrden" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" AutoGenerateColumns="False" Width="460px" OnSelectedIndexChanged="GvOrden_SelectedIndexChanged">
+        <asp:GridView HorizontalAlign="Center" ID="GvOrden" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" AutoGenerateColumns="False" Width="460px">
             <Columns>
                 <asp:BoundField  DataField="NumInsumo" HeaderText="ID" />
                 <asp:BoundField  DataField="DesIns" HeaderText="DESCRIPCIÓN" />

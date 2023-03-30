@@ -1,7 +1,4 @@
-﻿body {
-
-}
-
+﻿
 .passInput{
     border-radius:50px;
 }
@@ -28,4 +25,37 @@
 btnenviar{
     border-radius:15px;
 
+}
+
+.containerpass {
+    background: #F7971E; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 15px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:450px;
+}
+.barracompleta{
+    margin:20px;
+}
+#myInput{
+    border-radius:15px;
+    border:.5px solid black;
+}
+.txtCambiarPass{
+    color:white;
+    text-align:center;
+}
+.formCambio{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:100px
+}
+.btnCambiar{
+    margin:10px;
 }

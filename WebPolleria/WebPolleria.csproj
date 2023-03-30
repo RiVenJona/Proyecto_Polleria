@@ -73,6 +73,7 @@
     <Content Include="AnularReserva.aspx" />
     <Content Include="CambiarPass.aspx" />
     <Content Include="estilos\Login.css" />
+    <Content Include="estilos\Master.css" />
     <Content Include="estilos\RegisReserva.css" />
     <Content Include="GenOrdenInsumo.aspx" />
     <Content Include="Imagenes\ImagenInicial.jpg" />

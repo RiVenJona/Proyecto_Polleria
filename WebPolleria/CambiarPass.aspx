@@ -6,14 +6,15 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link rel="stylesheet" type="text/css" href="/estilos/Login.css" />
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" class="formCambio">
         <div class="containerpass">
-            <h5>Cambio de contraseña</h5>
            <%-- <input type="password" name="txtContraA" placeholder="Ingrese Antigua contraseña" />
             <input type="password" name="txtContraN" placeholder="Ingrese Nueva contraseña" />--%>
-            <input type="password" id="myInput" oninput="inputChanged()" onkeypress="return evitarEspacios(event)" oncopy="return false"/>
+            <h3 class="txtCambiarPass">PROCEDA A CAMBIAR LA CONTRASEÑA POR DEFECTO POR FAVOR</h3>
+            <input type="password" id="myInput" name="txtNuevapass" oninput="inputChanged()" placeholder="Nueva Contraseña" onkeypress="return evitarEspacios(event)" oncopy="return false"/>
             <script>
                 function evitarEspacios(event) {
                     var tecla = event.keyCode || event.which;
@@ -100,6 +101,7 @@
                         border: 0.5px solid grey;
                     }
                 </style>
+            <asp:Button ID="btnCambiarPass" runat="server" Text="Cambiar" OnClick="btnCambiarPass_Click" CssClass="btnCambiar"/>
             </div>
     </form>
 </body>

@@ -113,7 +113,7 @@ namespace DA_
                 using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
                 {
                     cn.Open();
-                    SqlCommand cmd = new SqlCommand("[dbo].[ValidarPreguntas]");
+                    SqlCommand cmd = new SqlCommand("[dbo].[ValidarPreguntas]",cn);
                     cmd.Parameters.AddWithValue("@p1", p1);
                     cmd.Parameters.AddWithValue("@p2", p2);
                     cmd.Parameters.AddWithValue("@p3", p3);
@@ -130,6 +130,75 @@ namespace DA_
             catch (Exception)
             {
                 return string.Empty;
+            }
+        }
+        public int ValUsuarioSiTienePreguntas(string user, string pass)
+        {
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
+                {
+                    cn.Open();
+                    SqlCommand cmd = new SqlCommand("[dbo].[ValPreguntas]",cn);
+                    cmd.Parameters.AddWithValue("@user", user);
+                    cmd.Parameters.AddWithValue("@pass", pass);
+                    cmd.CommandTimeout = 0;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    var val = cmd.ExecuteScalar();
+                    if (int.Parse(val.ToString()) != 0)
+                    { return int.Parse(val.ToString()); }
+                    else { return 0; }
+                }
+            }
+            catch(Exception)
+            {
+                return -1;
+            }
+        }
+        public bool RegistrarPreguntas(string user,string p1, string p2, string p3, string p4, string p5)
+        {
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
+                {
+                    cn.Open();
+                    SqlCommand cmd = new SqlCommand("[dbo].[RegistrarPreguntas]",cn);
+                    cmd.Parameters.AddWithValue("@user", user);
+                    cmd.Parameters.AddWithValue("@p1", p1);
+                    cmd.Parameters.AddWithValue("@p2", p2);
+                    cmd.Parameters.AddWithValue("@p3", p3);
+                    cmd.Parameters.AddWithValue("@p4", p4);
+                    cmd.Parameters.AddWithValue("@p5", p5);
+                    cmd.CommandTimeout = 0;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    var val = cmd.ExecuteScalar();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        public bool CambiarPass(string user, string nuevaPass)
+        {
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(Conexion.Obtener()))
+                {
+                    cn.Open();
+                    SqlCommand cmd = new SqlCommand("[dbo].[cambiarPass]", cn);
+                    cmd.Parameters.AddWithValue("@user", user);
+                    cmd.Parameters.AddWithValue("@nuevapass", nuevaPass);
+                    cmd.CommandTimeout = 0;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    var val = cmd.ExecuteScalar();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
     }

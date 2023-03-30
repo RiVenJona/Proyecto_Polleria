@@ -20,7 +20,7 @@ namespace WebPolleria
             {
                 this.ImagenMesa.ImageUrl = "~/Imagenes/ImagenInicial.jpg";
                 LlenarListaHorarios();
-                LlenarListaMesas();
+                //LlenarListaMesas();
                 this.RegCliente.Visible = false;
                 this.BtnRegistrar.Visible = false;
             }
